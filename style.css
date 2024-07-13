@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(205, 203, 203);
+  font-family: "Baskervville SC", serif;
+}
+.box {
+  margin-top: 200px;
+  margin-left: 200px;
+  width: 100px;
+  height: 100px;
+  padding-top: 35px;
+  border: 1.5px solid #212121;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: teal;
+  animation-name: move, changeColor;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(500px, 0);
+  }
+  50% {
+    transform: translate(500px, -200px);
+  }
+  75% {
+    transform: translate(0, -200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes changeColor {
+  0% {
+    background-color: cornflowerblue;
+  }
+  12.5% {
+    background-color: cadetblue;
+  }
+  25% {
+    background-color: teal;
+  }
+  37.5% {
+    background-color: limegreen;
+  }
+  50% {
+    background-color: goldenrod;
+  }
+  62.5% {
+    background-color: gold;
+  }
+  75% {
+    background-color: orange;
+  }
+  88.5% {
+    background-color: red;
+  }
+  100% {
+    background-color: crimson;
+  }
+}
